@@ -1,0 +1,281 @@
+*,html,body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Bagian Header  */
+header {
+    background-color: rgb(0, 19, 34);
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+.navbar {
+    margin-right: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.header-img {
+    width: 110px;
+    height: 110px;
+    margin-left: 10px;
+}
+
+.header-title {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    margin-top: 25px;
+    font-size:50px;
+}
+
+nav ul {
+    display: flex;
+    padding: 35px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size:18px;
+}
+
+li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+/* Dropdown */
+.button  {
+    background-color: rgb(0, 19, 34);
+    color: rgb(0, 19, 34);
+    opacity: 0;
+}
+
+.panah {
+    opacity: 0;
+}
+
+/* Bagian Main  */
+.judul {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 3px 2px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+main {
+    overflow: auto;
+}
+
+#konten {
+    float: left;
+    width: 80%;
+    padding: 20px;
+    
+}
+
+article>ul {
+    margin-left: 350px;
+    padding-bottom: 150px;
+}
+article>p {
+    margin-left: 270px;
+    margin-top: 20px;
+}
+
+.book {
+   box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+   padding: 50px;
+   margin-bottom: 50px;
+}
+
+.book-img {
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    margin: 20px; 
+    float: left;
+    box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+article p {
+    padding: 30px;
+}
+
+section {
+    padding-left: 20px;
+}
+
+article>section>ul {
+    margin-bottom: 150px;
+}
+
+section h3 {
+    margin-top: 10px;
+}
+
+article>section>ul {
+    margin-left: 350px;
+}
+article>section>p {
+    margin-left: 270px;
+    margin-top: 20px;
+}
+
+
+/* Aside  */
+aside {
+    float: right;
+    width: 15%;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+.profile {
+    width: 220px;
+    box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+ aside>article>h2 {
+    margin-bottom: 15px;
+ }
+
+ .biodata {
+    list-style-type: none;
+    padding: 5px;
+ }
+
+ .aside-img {
+    width: 100%;
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    margin-bottom: 20px;
+    border-radius: 50px;
+ }
+
+
+ /* Bagian Footer  */
+footer {
+    padding: 20px;
+    color: white;
+    background-color:rgb(0, 19, 34);
+    text-align: center;
+ }
+
+ @media screen and (max-width: 1000px) {
+    #konten,aside {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    footer {
+        margin-bottom: 60px;
+    }
+
+    .book-img {
+        float: none;
+    }
+
+    nav ul { 
+        padding: 35px;
+    }
+
+    .book {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .aside-img {
+        width: 250px;
+    }
+
+    aside>article {
+        text-align: center;
+    }
+
+    aside {
+        margin-top: 50px;
+    }
+
+    .profile {
+        margin: auto;
+        width: 90%;
+    }
+
+    article>ul {
+        margin-left: 10px;
+        padding-bottom: 15px;
+    }
+    article>p {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    article>section>ul {
+        margin-left: 0px;
+    }
+    article>section>p {
+        margin-left: 15px;
+        margin-top: 15px;
+        
+    }
+
+
+ @media screen and (max-width: 600px) {
+    .navbar{
+        margin: 0 auto;
+    }
+    nav ul { 
+        padding: 20px;
+    }
+    .panah {
+        opacity: 100;
+        font-weight: bolder;
+    }
+
+    .button {
+        color: white;
+        font-size: 20px;
+        border: none;
+        top: 110px;
+        padding: 10px;
+        cursor: pointer;
+        opacity: 100;
+        position: fixed;
+      }
+      
+      .dropbtn:hover {
+        color: #f80000;
+       }
+      
+      .dropdown-content {
+        display: none;
+        width: 100%;
+        background-color: rgb(0, 19, 34);
+        color: #ddd;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+      
+      .show {
+        display: inline;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+  }
+}
+
